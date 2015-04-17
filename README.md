@@ -61,7 +61,7 @@ Again, autopkg info will show any overrides
 
 
     Input values: 
-         LOCALE = "en_GB";
+        LOCALE = "en_GB";
         NAME = Firefox;
         RELEASE = latest;
         "add_s_to_availability_date" = 86400;
