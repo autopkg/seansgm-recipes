@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Description</key>
+        <string>Creates an Absolute Manage package (.amsdpackages), imports it into the Absolute Manage Admin console and uploads it to the Absolute Manage Server.</string>
+        <key>Identifier</key>
+        <string>local.amsdpackages.Daylight</string>
+        <key>Input</key>
+        <dict>
+            <key>NAME</key>
+            <string>Daylight</string>
+            <key>VERSION</key>
+            <string>latest</string>
+        </dict>
+        <key>ParentRecipe</key>
+        <string>local.amsdpackages.Daylight.pkg</string>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Processor</key>
+                <string>StopProcessingIf</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>predicate</key>
+                    <string>download_changed == FALSE</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>Processor</key>
+                <string>AbsoluteManageExport</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>dest_payload_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%.amsdpackages</string>
+                    <key>sdpackages_ampkgprops_path</key>
+                    <string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
+                    <key>source_payload_path</key>
+                    <string>%pkg_path%</string>
+                    <key>import_abman_to_servercenter</key>
+                    <true/>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
