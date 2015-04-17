@@ -6,6 +6,11 @@ For information on AutoPkg please read the [wiki](https://github.com/autopkg/aut
 
 To add the packages into Absolute you will require [AbsoluteManageExport](https://github.com/tburgin/AbsoluteManageExport)
 
+All these recipes require a parent.  Look at the ParentRecipe key in the file.  For example, Firefox.Absolute.recipe
+
+        <key>ParentRecipe</key>
+        <string>com.github.autopkg.pkg.Firefox_EN</string>
+
 ##Overrides
 
 Information on recipe overrides can be found [here](https://github.com/autopkg/autopkg/wiki/Recipe-Overrides)
