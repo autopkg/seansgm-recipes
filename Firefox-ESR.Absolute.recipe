@@ -5,7 +5,7 @@
 	<key>Description</key>
     <string>Creates an Absolute Manage package (.amsdpackages), imports it into the Absolute Manage Admin console and uploads it to the Absolute Manage Server.</string>
     <key>Identifier</key>
-	<string>local.amsdpackages.FirefoxESR</string>
+	<string>com.github.seansgm.amsdpackages.FirefoxESR</string>
 	<key>Input</key>
 	<dict>
 		<key>LOCALE</key>

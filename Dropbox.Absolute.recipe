@@ -5,7 +5,7 @@
 	<key>Description</key>
     <string>Creates an Absolute Manage package (.amsdpackages), imports it into the Absolute Manage Admin console and uploads it to the Absolute Manage Server.</string>
     <key>Identifier</key>
-	<string>local.amsdpackages.Dropbox</string>
+	<string>com.github.seansgm.amsdpackages.Dropbox</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

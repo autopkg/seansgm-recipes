@@ -5,14 +5,14 @@
 	<key>Description</key>
     <string>Creates an Absolute Manage package (.amsdpackages), imports it into the Absolute Manage Admin console and uploads it to the Absolute Manage Server.</string>
     <key>Identifier</key>
-	<string>com.github.seansgm.amsdpackages.VLC</string>
+	<string>com.github.seansgm.amsdpackages.ExifTool</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>VLC</string>
+		<string>ExifTool</string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.VLC</string>
+	<string>io.github.hjuutilainen.pkg.ExifTool</string>
 	<key>Process</key>
 	<array>
         <dict>
@@ -30,7 +30,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>dest_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.amsdpackages</string>
+				<string>%RECIPE_CACHE_DIR%/Mac-%NAME%-%version%.amsdpackages</string>
 				<key>sdpackages_ampkgprops_path</key>
 				<string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
 				<key>source_payload_path</key>
