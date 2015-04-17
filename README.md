@@ -54,3 +54,16 @@ Firefox override
         </dict>
         <key>ParentRecipe</key>
         <string>local.amsdpackages.FirefoxESR</string>
+
+Again, autopkg info will show any overrides
+
+        autopkg info Firefox.Absolute
+
+
+    Input values: 
+         LOCALE = "en_GB";
+        NAME = Firefox;
+        RELEASE = latest;
+        "add_s_to_availability_date" = 86400;
+        "payload_name_prefix" = "ABSOLUTE-";
+        "sd_name_prefix" = "ABSOLUTE-";
