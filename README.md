@@ -21,7 +21,7 @@ Consider using overrides for some keys, e.g.
 Firefox override
 
         <key>Identifier</key>
-        <string>local.Future.Absolute.Firefox</string>
+        <string>local.Override.Absolute.Firefox</string>
         <key>Input</key>
         <dict>
                 <key>LOCALE</key>
