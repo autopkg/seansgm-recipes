@@ -55,9 +55,9 @@ Firefox override
         <key>ParentRecipe</key>
         <string>local.amsdpackages.FirefoxESR</string>
 
-Again, autopkg info will show any overrides
+autopkg info will also show any overrides if there are any
 
-        autopkg info Firefox.Absolute
+        autopkg info Firefox.Absolute.Override
 
 
     Input values: 
