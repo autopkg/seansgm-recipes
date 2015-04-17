@@ -1,6 +1,5 @@
-AutoPkg Absolute Manage Recipes
-----
-----
+#AutoPkg Absolute Manage Recipes
+
 
 Absolute Manage has a page explaining configuration [here](http://forums.absolute.com/kb.php?a=1062&hilit=autopkg)
 
