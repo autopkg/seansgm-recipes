@@ -10,6 +10,16 @@ All these recipes require a parent.  Look at the ParentRecipe key in the file.  
 
         <key>ParentRecipe</key>
         <string>com.github.autopkg.pkg.Firefox_EN</string>
+        
+Alternatively, you can get parent info running:
+
+        autopkg info Firefox.Absolute
+        
+which in turn will show all parents
+
+    Recipe file path:    /Volumes/DATA/autopkg/Recipes/Absolute/Firefox.Absolute.recipe
+    Parent recipe(s):    /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.pkg.recipe
+                         /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.download.recipe
 
 ##Overrides
 
