@@ -1,4 +1,6 @@
-#AutoPkg Recipes for Absolute Manage
+#AutoPkg Recipes for LANrev (formerly Absolute Manage)
+
+I will update this page shortly with correct info
 
 Absolute Manage have provided a guide to [install](http://forums.absolute.com/kb.php?a=1062&hilit=autopkg)
 
