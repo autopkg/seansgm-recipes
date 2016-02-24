@@ -9,6 +9,8 @@ For information on AutoPkg please read the [wiki](https://github.com/autopkg/aut
 
 ## For Those Transitioning
 
+You may need to wait if you are using [Autopkgr](https://github.com/lindegroup/autopkgr).  Hopefully there will be an update in V1.4
+
 The Absolute recipes have been duplicated to allow for the transition to LANrev.  Any future changes required will only be reflected in the newer LANrev recipes.  Please adopt these newer LANrev recipes.  Although the Absolute recipes are still in this repo, they will be deleted at some point.  Please ensure you change any override recipes to point to each new ParentRecipe.
 
 [AbsoluteManageExport](https://github.com/tburgin/AbsoluteManageExport) has been replaced with [LANrevImporter](https://github.com/jbaker10/LANrevImporter).
