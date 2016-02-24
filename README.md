@@ -1,25 +1,34 @@
 #AutoPkg Recipes for LANrev (formerly Absolute Manage)
 
-I will update this page shortly with correct info
-
-Absolute Manage have provided a guide to [install](http://forums.absolute.com/kb.php?a=1062&hilit=autopkg)
-
 For information on AutoPkg please read the [wiki](https://github.com/autopkg/autopkg/wiki/Getting-Started)
 
-To add the packages into Absolute you will require [AbsoluteManageExport](https://github.com/tburgin/AbsoluteManageExport)
+~~Absolute Manage have provided a guide to [install](http://forums.absolute.com/kb.php?a=1062&hilit=autopkg)~~
 
-All these recipes require a parent.  Look at the ParentRecipe key in the file.  For example, Firefox.Absolute.recipe
+## For Anyone New
+[LANrevImporter](https://github.com/jbaker10/LANrevImporter) is required to upload packages into your LANrev database and "LANrev Admin.app" needs to be running and signed in with a user who has permissions to add payloads and packages.  See the LANrevImporter page for more details.
+
+## For Those Transitioning
+
+The Absolute recipes have been duplicated to allow for the transition to LANrev.  Any future changes required will only be reflected in the newer LANrev recipes.  Please adopt these newer LANrev recipes.  Although the Absolute recipes are still in this repo, they will be deleted at some point.  Please ensure you change any override recipes to point to each new ParentRecipe.
+
+[AbsoluteManageExport](https://github.com/tburgin/AbsoluteManageExport) has been replaced with [LANrevImporter](https://github.com/jbaker10/LANrevImporter).
+
+Although you can continue to use AbsoluteManageExport, new features will only be added to LANrevImporter and if there is any deprecated code in AbsoluteManageExport, it will not be updated.
+
+## Recipes
+
+All these recipes require a parent.  Look at the ParentRecipe key in the file.  For example, Firefox.LANrev.recipe
 
         <key>ParentRecipe</key>
         <string>com.github.autopkg.pkg.Firefox_EN</string>
         
 Alternatively, you can get parent info running:
 
-        autopkg info Firefox.Absolute
+        autopkg info Firefox.LANrev
         
 which in turn will show all parents
 
-    Recipe file path:    /Volumes/DATA/autopkg/Recipes/Absolute/Firefox.Absolute.recipe
+    Recipe file path:    /Volumes/DATA/autopkg/Recipes/LANrev/Firefox.LANrev.recipe
     Parent recipe(s):    /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.pkg.recipe
                          /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.download.recipe
 
@@ -38,7 +47,7 @@ Consider using overrides for some keys, e.g.
 Firefox override
 
         <key>Identifier</key>
-        <string>local.Override.Absolute.Firefox</string>
+        <string>local.Override.LANrev.Firefox</string>
         <key>Input</key>
         <dict>
                 <key>LOCALE</key>
@@ -48,9 +57,9 @@ Firefox override
                 <key>RELEASE</key>
                 <string>latest</string>
                 <key>sd_name_prefix</key>
-                <string>ABSOLUTE-</string>
+                <string>LANrev-</string>
                 <key>payload_name_prefix</key>
-                <string>ABSOLUTE-</string>
+                <string>LANrev-</string>
                 <key>add_s_to_availability_date</key>
                 <integer>86400</integer>
         </dict>
@@ -59,7 +68,7 @@ Firefox override
 
 autopkg info will also show any overrides if there are any
 
-        autopkg info Firefox.Absolute.Override
+        autopkg info Firefox.LANrev.Override
 
 
     Input values: 
@@ -67,5 +76,5 @@ autopkg info will also show any overrides if there are any
         NAME = Firefox;
         RELEASE = latest;
         "add_s_to_availability_date" = 86400;
-        "payload_name_prefix" = "ABSOLUTE-";
-        "sd_name_prefix" = "ABSOLUTE-";
+        "payload_name_prefix" = "LANrev-";
+        "sd_name_prefix" = "LANrev-";
