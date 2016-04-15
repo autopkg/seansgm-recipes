@@ -10,6 +10,8 @@
     <dict>
         <key>NAME</key>
         <string>OracleJava8</string>
+        <key>min_os</key>
+        <string>OSX10.7</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.autopkg.pkg.OracleJava8</string>
