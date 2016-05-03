@@ -10,6 +10,8 @@
     <dict>
         <key>NAME</key>
         <string>GoogleChrome</string>
+	<key>min_os</key>
+	<string>OSX10.9</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.autopkg.pkg.googlechrome</string>
