@@ -27,7 +27,7 @@
                 <key>sdpackages_ampkgprops_path</key>
                 <string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
                 <key>source_payload_path</key>
-                <string>%pkg_path%</string>
+                <string>%destination_path%</string>
                 <key>import_pkg_to_servercenter</key>
                 <true/>
             </dict>
