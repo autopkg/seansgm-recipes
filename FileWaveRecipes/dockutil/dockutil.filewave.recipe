@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads latest version of Adium and imports into FileWave.</string>
+	<string>Downloads latest version of dockutil and imports into FileWave.</string>
 	<key>Identifier</key>
 	<string>com.github.seansgm.autopkg-filewave-recipes.dockutil</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>dockutil</string>
-	        <key>fw_app_bundle_id</key>
-	        <string>com.github.seansgm.autopkg-filewave-recipes.dockutil</string>
-	        <key>fw_destination_root</key>
-	        <string>/Applications/%NAME%.app</string>
+		<key>fw_app_bundle_id</key>
+		<string>com.github.seansgm.autopkg-filewave-recipes.dockutil</string>
+		<key>fw_destination_root</key>
+		<string>/Applications/%NAME%.app</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
