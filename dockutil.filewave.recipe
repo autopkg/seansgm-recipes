@@ -46,68 +46,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/flatpkg</string>
-				<key>flat_pkg_path</key>
-				<string>%pathname%/dockutil.pkg</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>extract_root</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/flatpkg/plugin_extract</string>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/flatpkg/dockutil.pkg</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgExtractor</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>info_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/flatpkg/plugin_extract/PackageInfo</string>
-				<key>plist_keys</key>
-				<dict>
-					<key>CFBundleIdentifier</key>
-					<string>fw_app_bundle_id</string>
-					<key>CFBundleShortVersionString</key>
-					<string>fw_app_version</string>
-				</dict>
-			</dict>
-			<key>Processor</key>
-			<string>PlistReader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>fw_fileset_group</key>
-				<string>Mac Desktop</string>
+				<key>fw_app_bundle_id</key>
+				<string>com.github.autopkg.filewave.dockutil</string>
 				<key>fw_fileset_name</key>
-				<string>%NAME% - %fw_app_version%</string>
+				<string>%NAME%</string>
 				<key>fw_import_source</key>
-				<string>%flat_pkg_path%</string>
+				<string>%pathname%</string>
 			</dict>
+			<key>Comment</key>
+			<string>Import the docktuil pkg into FileWave</string>
 			<key>Processor</key>
 			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<array>
-					<string>%RECIPE_CACHE_DIR%/%NAME%/flatpkg</string>
-				</array>
-				<key>path_list</key>
-				<string></string>
-			</dict>
-			<key>Processor</key>
-			<string>PathDeleter</string>
 		</dict>
 	</array>
 </dict>
