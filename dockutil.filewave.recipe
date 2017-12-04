@@ -49,7 +49,7 @@
 				<key>fw_app_bundle_id</key>
 				<string>com.github.autopkg.filewave.dockutil</string>
 				<key>fw_fileset_name</key>
-				<string>%NAME%</string>
+				<string>%NAME% - %version%</string>
 				<key>fw_import_source</key>
 				<string>%pathname%</string>
 			</dict>
