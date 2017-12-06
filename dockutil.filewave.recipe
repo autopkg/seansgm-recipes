@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest dockutil installer and imports into FileWave.</string>
 	<key>Identifier</key>
-	<string>com.github.seansgm.autopkg-filewave-recipes.dockutil</string>
+	<string>com.github.autopkg.seansgm-filewave.dockutil</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
