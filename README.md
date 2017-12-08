@@ -1,4 +1,4 @@
-##AutoPkg Recipes for FileWave & LANrev
+# AutoPkg Recipes for FileWave & LANrev
 
 For information on AutoPkg please read the [wiki](https://github.com/autopkg/autopkg/wiki/Getting-Started)
 
