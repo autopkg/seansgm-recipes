@@ -29,7 +29,7 @@ which in turn will show all parents
     Parent recipe(s):    /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.pkg.recipe
                          /Volumes/DATA/autopkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.download.recipe
 
-##Overrides
+## Overrides
 
 Information on recipe overrides can be found [here](https://github.com/autopkg/autopkg/wiki/Recipe-Overrides)
 
@@ -39,7 +39,7 @@ Consider using overrides for some keys, e.g.
 * payload\_name\_prefix
 * add\_s\_to\_availability\_date
 
-###Example
+### Example
 
 Firefox override
 
