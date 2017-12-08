@@ -1,21 +1,16 @@
-#AutoPkg Recipes for LANrev (formerly Absolute Manage)
+#AutoPkg Recipes for FileWave & LANrev
 
 For information on AutoPkg please read the [wiki](https://github.com/autopkg/autopkg/wiki/Getting-Started)
-
-~~Absolute Manage have provided a guide to [install](http://forums.absolute.com/kb.php?a=1062&hilit=autopkg)~~
 
 ## For Anyone New
 [LANrevImporter](https://github.com/jbaker10/LANrevImporter) is required to upload packages into your LANrev database and "LANrev Admin.app" needs to be running and signed in with a user who has permissions to add payloads and packages.  See the LANrevImporter page for more details.
 
-## For Those Transitioning
+[FWTools](https://github.com/autopkg/filewave) are required to upload packages into your FileWave database.  You will also find some FileWave recipes and the guide to get you started with FileWave
 
-You may need to wait if you are using [Autopkgr](https://github.com/lindegroup/autopkgr).  Hopefully there will be an update in V1.4
+## LANrev Note
 
-The Absolute recipes have been duplicated to allow for the transition to LANrev.  Any future changes required will only be reflected in the newer LANrev recipes.  Please adopt these newer LANrev recipes.  Although the Absolute recipes are still in this repo, they will be deleted at some point.  Please ensure you change any override recipes to point to each new ParentRecipe.
-
-[AbsoluteManageExport](https://github.com/tburgin/AbsoluteManageExport) has been replaced with [LANrevImporter](https://github.com/jbaker10/LANrevImporter).
-
-Although you can continue to use AbsoluteManageExport, new features will only be added to LANrevImporter and if there is any deprecated code in AbsoluteManageExport, it will not be updated.
+Due to LANrev's imminent end of life, it is highly unlikely I will make any chanage to the LANrev recipes anymore.
+FileWave recipes will now be offered instead
 
 ## Recipes
 
