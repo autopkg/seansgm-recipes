@@ -43,7 +43,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>fw_app_bundle_id</key>
-				<string>com.github.autopkg.filewave.dockutil</string>
+				<string>com.github.autopkg.filewave.osxfuse</string>
 				<key>fw_app_version</key>
 				<string>%version%</string>
 				<key>fw_fileset_name</key>
