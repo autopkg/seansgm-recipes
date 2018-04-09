@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest Silverlight installer and imports into FileWave.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.filewave.Silverlight</string>
+	<string>com.github.autopkg.seansgm-filewave.Silverlight</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
