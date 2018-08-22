@@ -2,6 +2,8 @@
 
 For information on AutoPkg please read the [wiki](https://github.com/autopkg/autopkg/wiki/Getting-Started)
 
+Absolute and LANrev recipes have been moved to their own directory.  Product is being killed off.
+
 ## For Anyone New
 [LANrevImporter](https://github.com/jbaker10/LANrevImporter) is required to upload packages into your LANrev database and "LANrev Admin.app" needs to be running and signed in with a user who has permissions to add payloads and packages.  See the LANrevImporter page for more details.
 
