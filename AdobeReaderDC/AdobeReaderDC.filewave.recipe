@@ -10,8 +10,8 @@
 	<dict>
 		<key>NAME</key>
 		<string>Adobe Acrobat Reader DC</string>
-        	<key>fw_destination_root</key>
-        	<string>/Applications/Adobe Acrobat Reader DC.app</string>
+		<key>fw_destination_root</key>
+		<string>/Applications/Adobe Acrobat Reader DC.app</string>
 		<key>fw_app_bundle_id</key>
 		<string>com.adobe.Reader</string>
 	</dict>
