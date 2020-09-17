@@ -10,8 +10,10 @@
 	<dict>
 		<key>NAME</key>
 		<string>Adobe Acrobat Reader DC</string>
-        <key>fw_destination_root</key>
-        <string>/Applications/Adobe Acrobat Reader DC.app</string>
+        	<key>fw_destination_root</key>
+        	<string>/Applications/Adobe Acrobat Reader DC.app</string>
+		<key>fw_app_bundle_id</key>
+		<string>com.adobe.Reader</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
@@ -26,6 +28,8 @@
 				<string>%NAME% - %LANGUAGE% - %version%</string>
 				<key>fw_import_source</key>
                                 <string>%pkg_path%</string>
+				<key>fw_app_bundle_id</key>
+				<string>%fw_app_bundle_id%</string>
 			</dict>
 			<key>Comment</key>
 			<string>Import the Adobe Reader DC pkg into FileWave</string>
