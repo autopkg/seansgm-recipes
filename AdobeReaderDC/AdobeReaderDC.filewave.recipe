@@ -28,8 +28,8 @@
 				<string>%NAME% - %LANGUAGE% - %version%</string>
 				<key>fw_import_source</key>
                                 <string>%pkg_path%</string>
-				<key>fw_app_bundle_id</key>
-				<string>%fw_app_bundle_id%</string>
+				<key>fw_app_version</key>
+				<string>%version%</string>
 			</dict>
 			<key>Comment</key>
 			<string>Import the Adobe Reader DC pkg into FileWave</string>
