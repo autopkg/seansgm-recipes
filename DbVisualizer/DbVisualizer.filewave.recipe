@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.rtrouton.pkg.dbvisualizer</string>
+	<string>com.github.nmcspadden.pkg.dbvisualizer</string>
 	<key>Process</key>
 	<array>
                 <dict>
