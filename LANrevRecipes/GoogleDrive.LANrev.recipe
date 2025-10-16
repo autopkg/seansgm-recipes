@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Creates an LANrev package (.amsdpackages), imports it into the LANrev Admin console and uploads it to the LANrev Server.</string>
+    <key>Identifier</key>
+    <string>com.github.seansgm.autopkg-lanrev-recipes.GoogleDrive</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>GoogleDrive</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.homebysix.pkg.GoogleDrive</string>
+    <key>MinimumVersion</key>
+    <string>0.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>com.github.jbaker10.LANrevImporter/LANrevImporter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dest_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.amsdpackages</string>
+                <key>sdpackages_ampkgprops_path</key>
+                <string>%RECIPE_DIR%/%NAME%-Defaults.ampkgprops</string>
+                <key>source_payload_path</key>
+                <string>%pkg_path%</string>
+                <key>import_pkg_to_servercenter</key>
+                <true/>
+            </dict>
+            <key>SharedProcessorRepoURL</key>
+            <string>https://github.com/jbaker10/LANrevImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
