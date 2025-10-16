@@ -5,18 +5,20 @@
 	<key>Description</key>
 	<string>Downloads the latest Adobe Reader DC and imports into FileWave.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.seansgm-filewave.AdobeReaderDC</string>
+	<string>com.github.autopkg.seansgm-filewave.AdobeReader</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>Adobe Acrobat Reader DC</string>
-        <key>fw_destination_root</key>
-        <string>/Applications/Adobe Acrobat Reader DC.app</string>
+		<key>fw_destination_root</key>
+		<string>/Applications/Adobe Acrobat Reader DC.app</string>
+		<key>fw_app_bundle_id</key>
+		<string>com.adobe.Reader</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.pkg.AdobeReaderDC</string>
+	<string>com.github.moofit-recipes.pkg.AdobeReader</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -26,6 +28,8 @@
 				<string>%NAME% - %LANGUAGE% - %version%</string>
 				<key>fw_import_source</key>
                                 <string>%pkg_path%</string>
+				<key>fw_app_version</key>
+				<string>%version%</string>
 			</dict>
 			<key>Comment</key>
 			<string>Import the Adobe Reader DC pkg into FileWave</string>
