@@ -27,11 +27,7 @@
 				<key>fw_fileset_name</key>
 				<string>%NAME% - %LANGUAGE% - %version%</string>
 				<key>fw_import_source</key>
-<<<<<<< HEAD:AdobeReader/AdobeReader.filewave.recipe
                                 <string>%pkg_path%</string>
-=======
-				<string>%pkg_path%</string>
->>>>>>> 585f4e34de634d2d690cff02caa81a8a8300d8e3:AdobeReaderDC/AdobeReaderDC.filewave.recipe
 				<key>fw_app_version</key>
 				<string>%version%</string>
 			</dict>
